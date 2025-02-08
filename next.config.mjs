@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
   basePath: "/echo-speech.github.io",
-  assetPrefix: "/echo-speech.github.io",
+  assetPrefix: "/echo-speech.github.io/",
 
   async headers() {
     return [
