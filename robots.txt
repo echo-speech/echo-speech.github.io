@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.justinosagie.com
+
+# Sitemaps
+Sitemap: https://www.justinosagie.com/sitemap.xml
