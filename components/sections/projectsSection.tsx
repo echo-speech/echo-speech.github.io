@@ -9,7 +9,7 @@ const ProjectsSection: React.FC = () => {
   return (
     <section
       id="projects"
-      className="md:py-15 scroll-mt-navbar-height bg-primary-black px-4 py-10 pt-navbar-height md:px-20"
+      className="scroll-mt-navbar-height bg-primary-black px-4 py-10 pt-navbar-height md:px-20 md:py-16"
     >
       <div className="mb-4 text-center md:mb-8">
         <h1 className="text-display-medium font-regular text-primary-white">

@@ -59,7 +59,7 @@ const Project: React.FC<ProjectProps> = ({
           {link && (
             <a
               type="button"
-              className="hover:text-corals inline-flex items-center p-1 text-center text-xs text-primary-white hover:underline"
+              className="inline-flex items-center p-1 text-center text-xs text-primary-white hover:text-black hover:underline"
               href={link}
               target="_blank"
               rel="noopener noreferrer"

@@ -8,7 +8,7 @@ const AboutSection: React.FC = () => {
   return (
     <section
       id="about"
-      className="md:py-15 scroll-mt-navbar-height bg-primary-white px-4 py-10 pt-navbar-height md:px-20"
+      className="scroll-mt-navbar-height bg-primary-white px-4 py-10 pt-navbar-height md:px-20 md:py-16"
     >
       <div className="mx-auto grid max-w-screen-xl gap-y-8 px-4 py-8 lg:grid-cols-12 lg:gap-8 lg:py-16 xl:gap-x-12">
         {/* Image Content */}

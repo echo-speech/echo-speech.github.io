@@ -5,7 +5,7 @@ const SkillsSection = () => {
   return (
     <section
       id="skills"
-      className="md:py-15 scroll-mt-navbar-height bg-primary-white px-4 py-10 pt-navbar-height md:px-20"
+      className="scroll-mt-navbar-height bg-primary-black px-4 py-10 pt-navbar-height md:px-20 md:py-16"
     >
       <div className="mx-auto max-w-screen-xl px-4 py-8">
         {/* Section Title */}
