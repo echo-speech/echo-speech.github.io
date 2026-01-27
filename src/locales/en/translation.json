@@ -1,0 +1,167 @@
+{
+  "navbar": {
+    "banner": "🏆 No.1 Speech on Kmong!\nSpeech that builds confidence through self-esteem - Eurat-chatcha (Click)",
+    "title": "Eloquent Speech Instructor",
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "curriculums": "Curriculums",
+    "contact": "Contact",
+    "resume": "Resume"
+  },
+  "home": {
+    "title1": "Fun but",
+    "title2": "Serious",
+    "title3": "Idealistic but",
+    "title4": "Realistic",
+    "title5": "Your Words,",
+    "title6": "Charming & Powerful",
+    "role": "Speech Instructor",
+    "name": "[ Minjun Kim ]"
+  },
+  "about": {
+    "title": "About",
+    "me": "Me",
+    "p1": "Among those with high self-esteem, there are hardly any people who cannot speak well or are afraid of conversation. Having high self-esteem means knowing how to respect oneself and others. In this appearance, confidence naturally exudes, composure naturally follows, and people feel comfort, likability, and charm in such confident and composed appearances.",
+    "p2": "An instructor who doesn't just throw methods that cannot be followed but creates this important self-esteem. I am Speech Instructor Minjun Kim, who makes you a charming person who speaks well, not just someone who looks like they speak well.",
+    "p3": "No matter how good a sword is, without the strength to wield it, the sword is useless. Conversely, if I have the strength to lift anything, I can lift anything even if it is not necessarily a sword. What is important is not the [method] called 'sword' but the [self-esteem] called 'strength' that can use anything.",
+    "p4": "Speech Instructor Minjun Kim, who helps you build strength rather than just recklessly throwing a sword, does not provide standardized and formal consumable lectures or impractical methods! A style that only I can do! A style that no one else has done before! Through speech lectures centered on self-esteem, I move away from fitting people into a set frame with simply easy and irresponsible methodological lectures and provide truthful and meaningful lectures tailored to the conditions and needs of individuals and groups so that they can move forward on their own.",
+    "p5": "Through this, although it is difficult to say exactly to the single digit in terms of the number of individual trainings, I can dare say it approaches four digits, and I have created fresh resonance, CS quality, and delightful development in communication and teamwork in various organizations such as companies, institutions, and hospitals.",
+    "p6": "And now, a person who has won 1st place in the speech field by overcoming prominent existing seniors in the largest talent market [Kmong] with my own curriculum from the pitch-black bottom that no one could see, a person who is giving many people the happiness of living like themselves called self-esteem and the joy of speaking,",
+    "p7": "I am Self-esteem Speech Instructor Minjun Kim. Nice to meet you!"
+  },
+  "skills": {
+    "title": "My",
+    "subtitle": "Skills",
+    "s1": {
+      "name": "Confidence<br/>Self-esteem"
+    },
+    "s2": {
+      "name": "Vocalization<br/>Delivery"
+    },
+    "s3": {
+      "name": "Eloquence<br/>Voice"
+    },
+    "s4": {
+      "name": "Interview<br/>Presentation"
+    },
+    "s5": {
+      "name": "CS Education<br/>Script"
+    },
+    "s6": {
+      "name": "Speaker Coaching<br/>Event Hosting"
+    }
+  },
+  "experience": {
+    "title": "My Experience",
+    "kmong": {
+      "role": "No.1 on Kmong Speech",
+      "description": "No.1 in speech field currently (Transactions, Reviews). Unique and original curriculum."
+    },
+    "hrf": {
+      "role": "HRF World Human Rights Project",
+      "description": "Speech coaching for diplomats, politicians, and professional instructors for World Human Rights Forum addresses."
+    },
+    "kma": {
+      "role": "Korea Management Association - Gyeonggi 'Human Book'",
+      "description": "'Joyful instructors have nothing to fear'. Professional instructor speech consulting for experts (teachers, art majors, chefs, craftsmen, etc.)."
+    },
+    "lql": {
+      "role": "LQL Le Quartier Latin",
+      "description": "CS education on the power of speaking and persuading well."
+    },
+    "mrt": {
+      "role": "MRT Travel Agency Service Center",
+      "description": "Establishment of CS manual and process, script writing, complaint CS education."
+    },
+    "uiwang": {
+      "role": "Uiwang City 'School of Life'",
+      "description": "Speech lectures for 20-50s public servants, CEOs, sales people, retirees on 'Living like myself and speaking like myself'."
+    },
+    "hana": {
+      "role": "Hana Financial (Convergence Technology Institute)",
+      "description": "Speech lecture on 'Teamwork and communication where I can speak for myself'."
+    },
+    "uber": {
+      "role": "Uber Technologies",
+      "description": "New Team, New People, New Communication - Junior Teamwork Speech"
+    },
+    "incheon": {
+      "role": "Incheon Branch Skill-up Meeting",
+      "description": "Creating a self-introduction that generates attractive engagement."
+    },
+    "owners": {
+      "role": "Hospital, Academy, Smart Store Owners",
+      "description": "Speech skills that owners must have when dealing with employees and customers."
+    },
+    "welovesis": {
+      "role": "WE LOVE SIS",
+      "description": "Establishment of CS scripts and response processes. Speech lecture on saying NO kindly."
+    },
+    "gunpo": {
+      "role": "Gunpo City Top Instructor Begins",
+      "description": "Speech lecture on how to become a top instructor from just an ordinary instructor."
+    },
+    "yoonart": {
+      "role": "Yoon Art",
+      "description": "Recording and speech coaching for new projects across all subsidiaries."
+    }
+  },
+  "curriculums": {
+    "title": "Core",
+    "subtitle": "Curriculums",
+    "more": "View Details",
+    "footer": "The above curriculums are examples from the curriculums I possess. Besides what is shown, I can suggest or create necessary classes according to the situation, topic, desired direction, and specificity of individuals and groups, so please feel free to contact me.",
+    "c1": {
+      "title": "The Secret of Good Conversation - Listening and Speaking",
+      "description": "The more people say speaking is difficult, the more they try to speak well. Because of this, they become poor at listening, and since they can't listen well, the situation where they can't speak even more repeats. A class for those who find conversation fearful and difficult. I lecture on the essence of listening and speaking that makes you enjoy conversation, build relationships, and make your life happy."
+    },
+    "c2": {
+      "title": "People who speak well have [Power] in their words.",
+      "description": "There is power in 'speech', not 'explanation'. Powerful speech has charm and persuasion, adding or creating value for the speaker. While we want to speak well, we find it difficult to explain (what speaking well is). A class that makes you realize what a person who speaks well is and suggests points to correct and directions to develop through this. A class that serves as a stepping stone to becoming a good speaker."
+    },
+    "c3": {
+      "title": "Making a relaxed me for a relaxed interview.",
+      "description": "Just thinking about an interesting interview makes me nervous, I'm even more nervous on the day, and my mind goes blank at the interview site. However, living in society, an interview is an unavoidable nervous situation no matter where we enter. Can a runner whose body is stiff with tension before the starting gun go off run well whether it's 100m or 500m? No matter where (companies, public corporations, public servants, educational institutions, public institutions, auditions, etc.) you have an interview, if you are nervous, you won't be able to show yourself or be remembered. You won't even remember what you did. A class that makes you confident rather than just making you not [nervous] which causes these problems, so that composure can follow. A class that will solve your key points coaching to win in interviews, fear of failure and challenge, and lack of confidence."
+    },
+    "c4": {
+      "title": "Class for attractive voice and effective delivery",
+      "description": "Those with small voices. Those who think their voice is not attractive. Those with poor pronunciation and lack of delivery. A class for those who slur their speech or cannot finish properly and hear that they look unconfident. A class that even teaches problem identification and training methods."
+    },
+    "c5": {
+      "title": "Making a confident me in presenting or in front of many people",
+      "description": "There are many people whose minds go blank and forget everything when they stand on stage or in front of people, or are busy just finishing. There must be many cases where you rambled and ruined it when you faced sudden variables or unexpected questions. A class that tells you important points you are missing and helps you have flexible thinking and composure within yourself even in a tense atmosphere. We do it to do well, not just to barely finish. Even if you take the lecture, there will still be tension. But a class that strengthens your mind so that you can have not only tension but also excitement, anticipation, and even composure in this situation."
+    },
+    "c6": {
+      "title": "No one is perfect. You, me, all of us",
+      "description": "A class that finds self-esteem and confidence for those who are stuck in the swamp of self-reproach and atrophy, looking at the eyes of people around them (colleagues, friends, family, etc.) thinking 'Won't they think of me like this?', 'Can I say this?', 'Why am I always like this?'. With me who will change the unfortunate ending that ends with disconnection of communication due to fear of hurting or being hurt while blaming oneself for not being perfect! A class where you can feel that I am also a good person, a cool person, and a person who can do well, and even increase efficiency with work life where relationship development and communication through conversation work."
+    },
+    "c7": {
+      "title": "About the reason why you can stand up on your own even if you fail and fail",
+      "description": "A very necessary class for those who want to change themselves, those facing challenges, and those frustrated by failure. We are always exposed to choices. Choices always give one of two results: success and failure. Usually, we hold failure more than success and regret past choices and cannot get up again or fear the next choice. Challenges require choices, and people need challenges when they want to change and develop themselves. Rather than worrying 'Won't it torment me?' or 'Won't I not change?' if this challenge and choice fails again, the essence of self-esteem speech that makes you a person who can accept failure and speak about it, making you free from failure even if you fail, and enabling you to speak your own story confidently."
+    },
+    "c8": {
+      "title": "I am the only one who can speak for myself",
+      "description": "Even if it is the same cherry blossom tree, the location where it is born is different and the blooming time is different. Likewise, everyone has different environments and different times of success. Someone can easily achieve their goal, and someone may not achieve their goal even if they work hard. Like this, we live in an unreasonable world and cannot change this. We cannot change the environment and situation thrown without my choice. But I can change myself. A class that ensures that no matter what environment I grew up in, what things I went through, what deficiencies and scars I have, I am not trapped in these, and I can move forward to the appearance I want to change myself, not determined by environment and situation. A class where you can change into [Me] who speaks like myself, happily, and confidently from now on with self-esteem speech that makes you a person who can speak and decide for yourself, not me decided and spoken by environment, situation, and others."
+    },
+    "c9": {
+      "title": "About the difference between expression and manifestation",
+      "description": "The reason why my words feel unpersuasive, powerless, and unattractive is because I don't know about the difference between expression and manifestation. There is no limit to expression. But there is a clear limit to manifestation. Through lectures that make you properly recognize expression and manifestation, you can feel that there is no limit to conversation and you can say anything by learning what expression is that can speak thoughts and emotions, values and beliefs, agreement and disagreement, rather than immature and selfish manifestation that just vomits out emotions or thoughts and hopes to be accepted. A step to becoming a person who speaks well, listens well, and communicates well, and a class that learns necessary expressions in any relationship [workplace, gathering, family, friends]."
+    },
+    "c10": {
+      "title": "About 'NO' that is absolutely necessary in service, teamwork, workplace, and group",
+      "description": "unconditional 'YES' does not help at all in terms of work efficiency, teamwork with colleagues, and consumer service. When you say 'NO', you can create better ideas, and even if you say 'NO', you can provide good service to consumers. But we are afraid and find 'NO' difficult. A class that makes this fear and difficulty colorless. A class that teaches why NO is needed and the reason why you can say NO, and furthermore creates the ability to create numerous YESs through NO."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "me": "Me",
+    "p1": "Actually, I'm not just a lecturer who speaks well.",
+    "p2": "The most important thing is making you speak well",
+    "p3": "Eloquent Speech Instructor.",
+    "p4": "Who?",
+    "name": "Minjun Kim",
+    "suffix": "."
+  }
+}

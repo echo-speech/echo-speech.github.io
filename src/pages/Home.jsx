@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { BiLogoGmail } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
@@ -8,6 +9,7 @@ import LogoKmong from "/assets/kmong.svg";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
+    const { t, i18n } = useTranslation();
     const socialLinks = [
         {
             Icon: LogoNaver,
@@ -61,9 +63,10 @@ export default function Home() {
                                 visible: { opacity: 1, y: 0 },
                             }}
                         >
-                            재밌지만{" "}
+                            {t("home.title1")}{" "}
                             <TypeAnimation
-                                sequence={["진지하게", 1000]}
+                                key={i18n.language}
+                                sequence={[t("home.title2"), 1000]}
                                 speed={10}
                                 style={{ fontWeight: 600 }}
                                 repeat={Infinity}
@@ -76,9 +79,10 @@ export default function Home() {
                                 visible: { opacity: 1, y: 0 },
                             }}
                         >
-                            이상적이지만{" "}
+                            {t("home.title3")}{" "}
                             <TypeAnimation
-                                sequence={["현실적이게", 1000]}
+                                key={i18n.language + "2"}
+                                sequence={[t("home.title4"), 1000]}
                                 speed={10}
                                 style={{ fontWeight: 600 }}
                                 repeat={Infinity}
@@ -91,9 +95,10 @@ export default function Home() {
                                 visible: { opacity: 1, y: 0 },
                             }}
                         >
-                            당신의 말에{" "}
+                            {t("home.title5")}{" "}
                             <TypeAnimation
-                                sequence={["매력과 힘을 만들어 줄", 1000]}
+                                key={i18n.language + "3"}
+                                sequence={[t("home.title6"), 1000]}
                                 speed={10}
                                 style={{ fontWeight: 600 }}
                                 repeat={Infinity}
@@ -106,23 +111,14 @@ export default function Home() {
                                 visible: { opacity: 1, y: 0 },
                             }}
                         >
-                            <span className="font-extrabold">스피치 강사</span>{" "}
+                            <span className="font-extrabold">{t("home.role")}</span>{" "}
                             <span
                                 className="text-white font-extrabold"
                                 style={{ WebkitTextStroke: "1px black" }}
                             >
-                                [ 김민준 ]
+                                {t("home.name")}
                             </span>
                         </motion.h2>
-                        {/* <motion.h2
-                            variants={{
-                                hidden: { opacity: 0, y: 10 },
-                                visible: { opacity: 1, y: 0 },
-                            }}
-                        >
-                            Based In{" "}
-                            <span className="font-extrabold">India.</span>
-                        </motion.h2> */}
                     </motion.div>
 
                     {/* <motion.p

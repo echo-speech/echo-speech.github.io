@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation, Trans } from "react-i18next";
 import { motion } from "framer-motion";
 import {
     FaJs,
@@ -13,174 +14,57 @@ import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { CgFigma } from "react-icons/cg";
 
 export default function Skills() {
+    const { t } = useTranslation();
+
     // todo: change icon
-    const [skills] = useState([
+    const skills = [
         {
             id: 1,
-            name: (
-                <>
-                    자신감
-                    <br />
-                    자존감
-                </>
-            ),
+            name: <Trans i18nKey="skills.s1.name" components={{ br: <br /> }} />,
             icon: <FaJs size={50} />,
         },
         {
             id: 2,
-            name: (
-                <>
-                    발성
-                    <br />
-                    전달력
-                </>
-            ),
+            name: <Trans i18nKey="skills.s2.name" components={{ br: <br /> }} />,
             icon: <FaReact size={50} />,
         },
         {
             id: 3,
-            name: (
-                <>
-                    화술
-                    <br />
-                    목소리
-                </>
-            ),
+            name: <Trans i18nKey="skills.s3.name" components={{ br: <br /> }} />,
             icon: <FaNodeJs size={50} />,
         },
         {
             id: 4,
-            name: (
-                <>
-                    면접
-                    <br />
-                    발표
-                </>
-            ),
+            name: <Trans i18nKey="skills.s4.name" components={{ br: <br /> }} />,
             icon: <FaPython size={50} />,
         },
         {
             id: 5,
-            name: (
-                <>
-                    CS 교육
-                    <br />
-                    스크립트
-                </>
-            ),
+            name: <Trans i18nKey="skills.s5.name" components={{ br: <br /> }} />,
             icon: <FaDatabase size={50} />,
         },
         {
             id: 6,
-            name: (
-                <>
-                    연사코칭
-                    <br />
-                    행사진행
-                </>
-            ),
+            name: <Trans i18nKey="skills.s6.name" components={{ br: <br /> }} />,
             icon: <FaJava size={50} />,
         },
-    ]);
+    ];
 
-    // todo: change company name and adjust company icon
-    const [experiences] = useState([
-        {
-            id: 1,
-            company: "Youtube",
-            role: "크몽 스피치 1위",
-            period: "Nov 2019 - Present",
-            description:
-                "현시점 스피치 분야 1위 ( 거래 횟수 , 리뷰 ) 독보적이고 독창적인 커리큘럼.",
-            logo: "/assets/youtube.svg",
-        },
-        {
-            id: 2,
-            company: "Youtube",
-            role: "HRF 휴먼 프로덕션",
-            period: "Jan 2017 - Oct 2019",
-            description: "세계 인권 포럼 연사들을 위한 연설 컨설팅 및 코칭.",
-            logo: "/assets/hrf.svg",
-        },
-        {
-            id: 3,
-            company: "Youtube",
-            role: "한국능률협회 - 경기도 “사람책”",
-            period: "Jan 2017 - Oct 2019",
-            description:
-                "“즐거운 강사는 무서울 게 없다” 전문가(교사,미술전공자,요리사,공예사등)들을 위한 전문 강사 스피치 컨설팅.",
-            logo: "/assets/korea.svg",
-        },
-        {
-            id: 4,
-            company: "Youtube",
-            role: "LQL 르 카르띠에 라탱",
-            period: "Jan 2017 - Oct 2019",
-            description: "잘 말하고 잘 설득시키는 힘 CS교육.",
-            logo: "/assets/lql.svg",
-        },
-        {
-            id: 5,
-            company: "Youtube",
-            role: "MRT 여행사 서비스 센터",
-            period: "Jan 2017 - Oct 2019",
-            description:
-                "CS 메뉴얼 및 프로세스 정립 ,스크립트 작성 ,컴플레인 CS 교육.",
-            logo: "/assets/mrt.svg",
-        },
-        {
-            id: 6,
-            company: "Youtube",
-            role: "의왕시 “인생대학”",
-            period: "Jan 2017 - Oct 2019",
-            description:
-                "20~50대 공무원,CEO,영업직,퇴직인들을 위한 “나답게 살고 나답게 말하기” 스피치 강의.",
-            logo: "/assets/youtube.svg",
-        },
-        {
-            id: 7,
-            company: "Youtube",
-            role: "하나금융 (융합기술원)",
-            period: "Jan 2017 - Oct 2019",
-            description:
-                "“나를 말할 수 있는 팀워크와 커뮤니케이션에 대하여”  스피치 강의.",
-            logo: "/assets/hanabank.svg",
-        },
-        {
-            id: 8,
-            company: "Youtube",
-            role: "우버 테크놀로지스 개발자",
-            period: "Jan 2017 - Oct 2019",
-            description:
-                "새로운 팀원,새로운 프로젝트에서 자신있는 나를 만들기.",
-            logo: "/assets/uber.svg",
-        },
-        {
-            id: 9,
-            company: "Youtube",
-            role: "인천 지부 직장인들을 위한 스킬업 모임",
-            period: "Jan 2017 - Oct 2019",
-            description: "매력적인 끌어당김을 자아내는 자기소개 만들기.",
-            logo: "/assets/youtube.svg",
-        },
-        {
-            id: 10,
-            company: "Youtube",
-            role: "병원,학원,스마트 스토어 오너",
-            period: "Jan 2017 - Oct 2019",
-            description: "직원과 고객을 상대할 때 오너로써 갖춰야 할 스피치.",
-            logo: "/assets/hospital.svg",
-        },
-        {
-            id: 11,
-            company: "Youtube",
-            role: "WE LOVE SIS",
-            period: "Jan 2017 - Oct 2019",
-            description:
-                "CS스크립트,대응방안 프로세스 정립. 친절한 NO를 만드는 스피치 강의",
-            logo: "/assets/youtube.svg",
-        },
-    ]);
+    const experienceData = [
+        { id: 1, key: "kmong", logo: "/assets/youtube.svg" },
+        { id: 2, key: "hrf", logo: "/assets/hrf.svg" },
+        { id: 3, key: "kma", logo: "/assets/korea.svg" },
+        { id: 4, key: "lql", logo: "/assets/lql.svg" },
+        { id: 5, key: "mrt", logo: "/assets/mrt.svg" },
+        { id: 6, key: "uiwang", logo: "/assets/youtube.svg" },
+        { id: 7, key: "hana", logo: "/assets/hanabank.svg" },
+        { id: 8, key: "uber", logo: "/assets/uber.svg" },
+        { id: 9, key: "incheon", logo: "/assets/youtube.svg" },
+        { id: 10, key: "owners", logo: "/assets/hospital.svg" },
+        { id: 11, key: "welovesis", logo: "/assets/youtube.svg" },
+        { id: 12, key: "gunpo", logo: "/assets/youtube.svg" },
+        { id: 13, key: "yoonart", logo: "/assets/youtube.svg" },
+    ];
 
     return (
         <div className="mt-3 lg:mt-16" id="skills">
@@ -192,7 +76,7 @@ export default function Skills() {
                     transition={{ duration: 0.8 }}
                     viewport={{ once: true }}
                 >
-                    My <span className="font-extrabold">Skills</span>
+                    {t("skills.title")} <span className="font-extrabold">{t("skills.subtitle")}</span>
                 </motion.h2>
 
                 {/* Skill Cards */}
@@ -218,7 +102,7 @@ export default function Skills() {
             </div>
 
             {/* Experience Section */}
-            <div className="bg-black w-full my-8 py-8 lg:my-16 lg:py-16">
+            <div className="bg-black w-full my-8 py-8 lg:my-16 lg:py-16" id="experience">
                 <motion.h2
                     className="text-2xl lg:text-4xl text-center text-white"
                     initial={{ opacity: 0, y: -20 }}
@@ -226,15 +110,19 @@ export default function Skills() {
                     transition={{ duration: 0.8 }}
                     viewport={{ once: true }}
                 >
-                    My <span className="font-extrabold">Experience</span>
+                    {t("experience.title")}
                 </motion.h2>
 
                 {/* Experience Cards */}
                 <div className="px-5 lg:px-28 my-8 lg:mt-16 space-y-10">
-                    {experiences.map((exp, index) => (
+                    {experienceData.map((exp, index) => (
                         <motion.div
                             key={exp.id}
-                            className="bg-black p-5 border border-[#D4D4D8] rounded-md hover:bg-[#27272A] transition-all cursor-pointer"
+                            className={`bg-black p-5 border rounded-md hover:bg-[#27272A] transition-all cursor-pointer ${
+                                exp.key === "kmong"
+                                    ? "border-[#FFD400] border-2"
+                                    : "border-[#D4D4D8]"
+                            }`}
                             initial={{ opacity: 0, x: -20 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{
@@ -253,8 +141,7 @@ export default function Skills() {
                                         alt=""
                                     /> */}
                                     <h2 className="font-semibold text-white text-lg lg:text-xl">
-                                        {/* {exp.role} at {exp.company} */}
-                                        {exp.role}
+                                        {t(`experience.${exp.key}.role`)}
                                     </h2>
                                 </div>
                                 {/* <span className="text-[#D4D4D8] font-semibold text-sm mt-4 lg:mt-0 lg:text-base">
@@ -262,7 +149,7 @@ export default function Skills() {
                                 </span> */}
                             </div>
                             <p className="text-[#D4D4D8] mt-6 text-sm/6 lg:text-base font-light">
-                                {exp.description}
+                                {t(`experience.${exp.key}.description`)}
                             </p>
                         </motion.div>
                     ))}

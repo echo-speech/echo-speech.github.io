@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { useTranslation } from "react-i18next";
 import { motion, useInView } from "framer-motion";
 import { BiLogoGmail } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
@@ -7,6 +8,7 @@ import { IoMdMail } from "react-icons/io";
 import { FaPhone } from "react-icons/fa6";
 
 export default function Contact() {
+    const { t } = useTranslation();
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, amount: 0.2 });
 
@@ -25,7 +27,7 @@ export default function Contact() {
                 transition={{ duration: 0.8 }}
                 className="text-2xl lg:text-4xl text-center mb-8"
             >
-                Contact <span className="font-extrabold">Me</span>
+                {t("contact.title")} <span className="font-extrabold">{t("contact.me")}</span>
             </motion.h2>
 
             <motion.div
@@ -35,10 +37,10 @@ export default function Contact() {
                 className="text-center"
             >
                 <p className="text-[#71717A] text-sm/6 lg:text-base mt-0 lg:mt-0">
-                    사실 저는 그냥 말을 잘하는 강사가 아닙니다. <br />
-                    말을 잘 할 수 있게 만들어주는 게 제일 중요한
-                    <br />말 잘하는 스피치 강사. <br />
-                    누구?
+                    {t("contact.p1")} <br />
+                    {t("contact.p2")}
+                    <br />{t("contact.p3")} <br />
+                    {t("contact.p4")}
                 </p>
                 <div className="font-extrabold text-2xl lg:text-5xl mt-2 lg:mt-4 space-y-1 lg:space-y-3">
                     <h2>
@@ -46,9 +48,9 @@ export default function Contact() {
                             className="text-white"
                             style={{ WebkitTextStroke: "1px black" }}
                         >
-                            김민준
+                            {t("contact.name")}
                         </span>{" "}
-                        입니다.
+                        {t("contact.suffix")}
                     </h2>
                 </div>
 
