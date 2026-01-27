@@ -1,18 +1,32 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { IoLogoLinkedin, IoLogoTwitter } from "react-icons/io5";
 import { BiLogoGmail } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
+import LogoNaver from "/assets/naver.svg";
+import LogoKakaoTalk from "/assets/kakaotalk.svg";
+import LogoKmong from "/assets/kmong.svg";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
     const socialLinks = [
-        { Icon: BiLogoGmail, href: "mailto:firelikeboy@naver.com" },
         {
-            Icon: IoLogoLinkedin,
-            href: "https://kmong.com/gig/431560",
+            Icon: LogoNaver,
+            href: "mailto:firelikeboy@naver.com",
+            bgColor: "bg-green-500",
+            size: 32,
         },
-        { Icon: IoLogoTwitter, href: "https://open.kakao.com/o/sfTeJJng" },
+        {
+            Icon: LogoKmong,
+            href: "https://kmong.com/gig/431560",
+            bgColor: "bg-white",
+            size: 28,
+        },
+        {
+            Icon: LogoKakaoTalk,
+            href: "https://open.kakao.com/o/sfTeJJng",
+            bgColor: "bg-yellow-400",
+            size: 28,
+        },
     ];
 
     return (
@@ -130,22 +144,32 @@ export default function Home() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.8, duration: 1 }}
                     >
-                        {socialLinks.map(({ Icon, href }, index) => (
-                            <motion.a
-                                key={index}
-                                href={href}
-                                target="_blank"
-                                className="bg-white p-2 lg:p-3 rounded border-2 border-black"
-                                whileHover={{
-                                    scale: 1.1,
-                                    backgroundColor: "#000",
-                                    color: "#fff",
-                                }}
-                                whileTap={{ scale: 0.9 }}
-                            >
-                                <Icon className="w-4 h-4 lg:w-5 lg:h-5" />
-                            </motion.a>
-                        ))}
+                        {socialLinks.map(
+                            ({ Icon, href, bgColor, size }, index) => (
+                                <motion.a
+                                    key={index}
+                                    href={href}
+                                    target="_blank"
+                                    // className={`${bgColor} p-2 lg:p-3 rounded border-2 border-black`}
+                                    className={`${bgColor} w-12 h-12 p-2 lg:p-3 rounded border-2 border-black flex justify-center items-center`}
+                                    whileHover={{
+                                        scale: 1.1,
+                                        // backgroundColor: "#000",
+                                        backgroundColor: null,
+                                        color: "#fff",
+                                    }}
+                                    whileTap={{ scale: 0.9 }}
+                                >
+                                    {/* <Icon className="w-4 h-4 lg:w-5 lg:h-5" /> */}
+                                    <img
+                                        src={Icon}
+                                        alt="icon"
+                                        // className="w-4 h-4 lg:w-5 lg:h-5"
+                                        className={`max-w-[${size}px] max-h-[${size}px] object-contain`}
+                                    />
+                                </motion.a>
+                            )
+                        )}
                     </motion.div>
                 </motion.div>
 
@@ -159,7 +183,7 @@ export default function Home() {
                 >
                     <img
                         // className="h-full w-full"
-                        className="w-auto h-auto max-w-full rounded-lg shadow-lg blur-[1px]"
+                        className="w-auto h-auto max-w-full rounded-lg shadow-lg"
                         src="/assets/minjun-kim-main.jpg"
                         alt="Minjun Kim"
                     />

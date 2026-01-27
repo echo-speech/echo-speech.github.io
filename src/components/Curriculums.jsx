@@ -115,11 +115,11 @@ export default function Curriculums() {
                         viewport={{ once: true }}
                     >
                         <div className="lg:w-[500px] w-full rounded-2xl overflow-hidden">
-                            <img
+                            {/* <img
                                 className="w-full h-full hover:scale-105 transition-all duration-500 cursor-pointer object-cover"
                                 src={project.image}
                                 alt={project.title}
-                            />
+                            /> */}
                         </div>
 
                         <div className="lg:w-1/2 lg:space-y-6 space-y-4">
@@ -129,18 +129,19 @@ export default function Curriculums() {
                             <p className="font-bold text-white text-xl lg:text-3xl">
                                 {project.title}
                             </p>
+                            <details className="font-light text-sm/6 lg:text-base text-[#A9A9AF]">
+                                <summary>자세히 보기</summary>
+                                <p>{project.description}</p>
+                            </details>
 
-                            <p className="font-light text-sm/6 lg:text-base text-[#71717A]">
-                                {project.description}
-                            </p>
-                            <a
+                            {/* <a
                                 href={project.link}
                                 className="text-white mt-3 block"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
                                 <TbExternalLink size={23} />
-                            </a>
+                            </a> */}
                         </div>
                     </motion.div>
                 ))}

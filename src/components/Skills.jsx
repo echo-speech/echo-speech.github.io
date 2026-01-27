@@ -88,7 +88,7 @@ export default function Skills() {
         {
             id: 1,
             company: "Youtube",
-            role: "크몽",
+            role: "크몽 스피치 1위",
             period: "Nov 2019 - Present",
             description:
                 "현시점 스피치 분야 1위 ( 거래 횟수 , 리뷰 ) 독보적이고 독창적인 커리큘럼.",
@@ -99,17 +99,17 @@ export default function Skills() {
             company: "Youtube",
             role: "HRF 휴먼 프로덕션",
             period: "Jan 2017 - Oct 2019",
-            description:
-                "“즐거운 강사는 무서울 게 없다” 전문가(교사,미술전공자,요리사,공예사등)들을 위한 전문 강사 스피치 컨설팅.",
-            logo: "/assets/youtube.svg",
+            description: "세계 인권 포럼 연사들을 위한 연설 컨설팅 및 코칭.",
+            logo: "/assets/hrf.svg",
         },
         {
             id: 3,
             company: "Youtube",
-            role: "경기도 “사람책”",
+            role: "한국능률협회 - 경기도 “사람책”",
             period: "Jan 2017 - Oct 2019",
-            description: "세계 인권 포럼 연사들을 위한 연설 컨설팅 및 코칭.",
-            logo: "/assets/youtube.svg",
+            description:
+                "“즐거운 강사는 무서울 게 없다” 전문가(교사,미술전공자,요리사,공예사등)들을 위한 전문 강사 스피치 컨설팅.",
+            logo: "/assets/korea.svg",
         },
         {
             id: 4,
@@ -117,7 +117,7 @@ export default function Skills() {
             role: "LQL 르 카르띠에 라탱",
             period: "Jan 2017 - Oct 2019",
             description: "잘 말하고 잘 설득시키는 힘 CS교육.",
-            logo: "/assets/youtube.svg",
+            logo: "/assets/lql.svg",
         },
         {
             id: 5,
@@ -126,7 +126,7 @@ export default function Skills() {
             period: "Jan 2017 - Oct 2019",
             description:
                 "CS 메뉴얼 및 프로세스 정립 ,스크립트 작성 ,컴플레인 CS 교육.",
-            logo: "/assets/youtube.svg",
+            logo: "/assets/mrt.svg",
         },
         {
             id: 6,
@@ -144,7 +144,7 @@ export default function Skills() {
             period: "Jan 2017 - Oct 2019",
             description:
                 "“나를 말할 수 있는 팀워크와 커뮤니케이션에 대하여”  스피치 강의.",
-            logo: "/assets/youtube.svg",
+            logo: "/assets/hanabank.svg",
         },
         {
             id: 8,
@@ -153,7 +153,7 @@ export default function Skills() {
             period: "Jan 2017 - Oct 2019",
             description:
                 "새로운 팀원,새로운 프로젝트에서 자신있는 나를 만들기.",
-            logo: "/assets/youtube.svg",
+            logo: "/assets/uber.svg",
         },
         {
             id: 9,
@@ -169,6 +169,15 @@ export default function Skills() {
             role: "병원,학원,스마트 스토어 오너",
             period: "Jan 2017 - Oct 2019",
             description: "직원과 고객을 상대할 때 오너로써 갖춰야 할 스피치.",
+            logo: "/assets/hospital.svg",
+        },
+        {
+            id: 11,
+            company: "Youtube",
+            role: "WE LOVE SIS",
+            period: "Jan 2017 - Oct 2019",
+            description:
+                "CS스크립트,대응방안 프로세스 정립. 친절한 NO를 만드는 스피치 강의",
             logo: "/assets/youtube.svg",
         },
     ]);
@@ -201,7 +210,7 @@ export default function Skills() {
                             }}
                             viewport={{ once: true }}
                         >
-                            {skill.icon}
+                            {/* {skill.icon} */}
                             <p className="text-center">{skill.name}</p>
                         </motion.div>
                     ))}
@@ -238,18 +247,19 @@ export default function Skills() {
                         >
                             <div className="flex justify-between flex-col items-start lg:flex-row lg:items-center">
                                 <div className="flex items-center gap-5">
-                                    <img
+                                    {/* <img
                                         className="w-7"
                                         src={exp.logo}
                                         alt=""
-                                    />
+                                    /> */}
                                     <h2 className="font-semibold text-white text-lg lg:text-xl">
-                                        {exp.role} at {exp.company}
+                                        {/* {exp.role} at {exp.company} */}
+                                        {exp.role}
                                     </h2>
                                 </div>
-                                <span className="text-[#D4D4D8] font-semibold text-sm mt-4 lg:mt-0 lg:text-base">
+                                {/* <span className="text-[#D4D4D8] font-semibold text-sm mt-4 lg:mt-0 lg:text-base">
                                     {exp.period}
-                                </span>
+                                </span> */}
                             </div>
                             <p className="text-[#D4D4D8] mt-6 text-sm/6 lg:text-base font-light">
                                 {exp.description}

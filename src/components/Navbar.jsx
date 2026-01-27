@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { TbDownload } from "react-icons/tb";
 import { HiOutlineMenu, HiX } from "react-icons/hi";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Navbar() {
     const [hasShadow, setHasShadow] = useState(false);
@@ -37,14 +38,23 @@ export default function Navbar() {
             }`}
         >
             <div className="container mx-auto flex justify-between items-center">
-                <motion.img
+                {/* <motion.img
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                     onClick={() => scrollToSection("home")}
                     className="h-9 cursor-pointer"
                     src="/assets/logo.svg"
                     alt="Logo"
-                />
+                /> */}
+                <motion.h2
+                    className="font-black"
+                    variants={{
+                        hidden: { opacity: 0, y: 10 },
+                        visible: { opacity: 1, y: 0 },
+                    }}
+                >
+                    말 잘하는 스피치 강사
+                </motion.h2>
 
                 <ul className="hidden lg:flex items-center gap-x-7 font-semibold">
                     {["about", "skills", "curriculums", "contact"].map(
