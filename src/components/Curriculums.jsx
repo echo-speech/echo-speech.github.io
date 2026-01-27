@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { TbExternalLink } from "react-icons/tb";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Curriculums() {
     const { t } = useTranslation();
+    const [openId, setOpenId] = useState(null);
+
+    const toggleOpen = (id) => {
+        setOpenId(openId === id ? null : id);
+    };
 
     const curriculums = [
         {
@@ -115,17 +120,36 @@ export default function Curriculums() {
                             /> */}
                         </div>
 
-                        <div className="lg:w-1/2 lg:space-y-6 space-y-4">
-                            <h2 className="font-extrabold text-white mt-5 lg:mt-0 text-3xl lg:text-5xl">
+                        <div 
+                            className="lg:w-1/2 lg:space-y-8 space-y-6 cursor-pointer"
+                            onClick={() => toggleOpen(project.id)}
+                        >
+                            <h2 className="font-extrabold text-white mt-6 lg:mt-0 text-3xl lg:text-5xl">
                                 {String(project.id).padStart(2, "0")}
                             </h2>
-                            <p className="font-bold text-white text-xl lg:text-3xl">
+                            <p className="font-bold text-white text-xl lg:text-3xl leading-snug group-hover:text-[#FFD400] transition-colors">
                                 {project.title}
                             </p>
-                            <details className="font-light text-sm/6 lg:text-base text-[#A9A9AF]">
-                                <summary>{t("curriculums.more")}</summary>
-                                <p>{project.description}</p>
-                            </details>
+                            
+                            <div className="text-gray-300 text-base leading-relaxed lg:text-lg lg:leading-loose">
+                                <div className="font-semibold text-white mb-2 hover:text-[#FFD400] transition-colors flex items-center gap-2">
+                                    {t("curriculums.more")}
+                                    <span className={`transition-transform text-xs ${openId === project.id ? "rotate-180" : ""}`}>▼</span>
+                                </div>
+                                <AnimatePresence>
+                                    {openId === project.id && (
+                                        <motion.p
+                                            initial={{ height: 0, opacity: 0 }}
+                                            animate={{ height: "auto", opacity: 1 }}
+                                            exit={{ height: 0, opacity: 0 }}
+                                            transition={{ duration: 0.3 }}
+                                            className="overflow-hidden mt-2"
+                                        >
+                                            {project.description}
+                                        </motion.p>
+                                    )}
+                                </AnimatePresence>
+                            </div>
 
                             {/* <a
                                 href={project.link}

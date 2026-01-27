@@ -36,31 +36,31 @@ export default function About() {
                     {t("about.title")} <span className="font-extrabold">{t("about.me")}</span>
                 </h2>
 
-                <p className="text-[#71717A] text-sm/6 lg:text-base mt-5 lg:mt-10">
+                <p className="text-zinc-700 text-base leading-relaxed lg:text-lg lg:leading-loose mt-5 lg:mt-10">
                     {t("about.p1")}
                 </p>
 
-                <p className="text-[#71717A] text-sm/6 lg:text-base mt-3 lg:mt-5">
+                <p className="text-zinc-700 text-base leading-relaxed lg:text-lg lg:leading-loose mt-4 lg:mt-6">
                     {t("about.p2")}
                 </p>
 
-                <p className="text-[#71717A] text-sm/6 lg:text-base mt-3 lg:mt-5">
+                <p className="text-zinc-700 text-base leading-relaxed lg:text-lg lg:leading-loose mt-4 lg:mt-6">
                     {t("about.p3")}
                 </p>
 
-                <p className="text-[#71717A] text-sm/6 lg:text-base mt-3 lg:mt-5">
+                <p className="text-zinc-700 text-base leading-relaxed lg:text-lg lg:leading-loose mt-4 lg:mt-6">
                     {t("about.p4")}
                 </p>
 
-                <p className="text-[#71717A] text-sm/6 lg:text-base mt-3 lg:mt-5">
+                <p className="text-zinc-700 text-base leading-relaxed lg:text-lg lg:leading-loose mt-4 lg:mt-6">
                     {t("about.p5")}
                 </p>
 
-                <p className="text-[#71717A] text-sm/6 lg:text-base mt-3 lg:mt-5">
+                <p className="text-zinc-700 text-base leading-relaxed lg:text-lg lg:leading-loose mt-4 lg:mt-6">
                     {t("about.p6")}
                 </p>
 
-                <p className="text-[#71717A] text-sm/6 lg:text-base mt-3 lg:mt-5">
+                <p className="text-zinc-700 text-base leading-relaxed lg:text-lg lg:leading-loose mt-4 lg:mt-6">
                     {t("about.p7")}
                 </p>
             </motion.div>
